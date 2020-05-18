@@ -1,0 +1,15 @@
+#most of these are optional, but help to make the files smaller and thus speed up the loading of the project
+
+#command for converting the sass code to CSS and then minifying it
+sass --sourcemap=none styles.scss:stylesMinified.css --style compressed
+#This command is installed in Ubuntu with sudo apt-get install ruby-sass
+#I could easily just not use Sass and only use CSS, but I think it's good practice to use Sass, and it can help in the long run for big projects 
+
+#command for minifying JavaScript
+#I didn't use the -e flag because it would cause some kind of errors if I did for some reason.
+uglifyjs calculator.js -c -m -o calculatorMinified.js
+#This command is installed with npm with sudo npm install -g uglify-js uglify-js-es6
+
+#command for minifying HTML code
+html-minifier --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --minify-css true --minify-js true calculator.html -o calculatorMinified.html
+#this command is installed with sudo npm install -g html-minifier
