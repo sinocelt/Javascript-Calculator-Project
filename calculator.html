@@ -7,35 +7,36 @@
   <title>Javascript Calculator Project</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="stylesMinified.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script type="text/javascript" src="calculator.js"></script>
+  <script type="text/javascript" src="calculatorMinified.js"></script>
+  <!-- <script type="text/javascript" src="calculator.js"></script> -->
 </head>
 
 <body>
-  <br><br><br><br><br><br>
+  <br/><br/><br/><br/><br/><br/>
   <div class="container-fluid">
     <div class="ourTitle">Online Javascript Calculator</div>
     <div class="center-block outerBox">
-      <br><br><br>
+      <br/><br/><br/>
       <div id="displayArea" class="innerBox text-center">0 </div>
       <div id="leftBoxA" class="leftBox text-center">
         <button id="piButton" type="submit" onclick="continueString('π')" class="numbers">π </button>
         <button id="leftParentheses" type="submit" onclick="continueString('(')" class="numbers"> ( </button>
         <button id="rightParentheses" type="submit" onclick="continueString(')')" class="numbers"> ) </button>
-        <br><br>
+        <br/><br/>
         <button id="sevenButton" type="submit" onclick="continueString(7)" class="numbers">7</button>
         <button id="eightButton" type="submit" onclick="continueString(8)" class="numbers">8</button>
         <button id="sevenButton" type="submit" onclick="continueString(9)" class="numbers">9</button>
-        <br><br>
+        <br/><br/>
         <button id="fourButton" type="submit" onclick="continueString(4)" class="numbers">4</button>
         <button id="fiveButton" type="submit" onclick="continueString(5)" class="numbers">5</button>
         <button id="sixButton" type="submit" onclick="continueString(6)" class="numbers">6</button>
-        <br><br>
+        <br/><br/>
         <button id="oneButton" type="submit" onclick="continueString(1)" class="numbers">1</button>
         <button id="twoButton" type="submit" onclick="continueString(2)" class="numbers">2</button>
         <button id="threeButton" type="submit" onclick="continueString(3)" class="numbers">3</button>
-        <br><br>
+        <br/><br/>
         <button id="zeroButton" type="submit" onclick="continueString(0)" class="numbers">0 </button>
         <button id="decimalButton" type="submit" onclick="continueString('.')" class="numbers"> . </button>
       </div>
@@ -43,17 +44,17 @@
 
       <div id="operationsBoxA" class="operationsBox text-center">
         <button id="exponentButton" type="submit" onclick="continueString('^')" class="operations">^ </button>
-        <br>
+        <br/>
         <button id="addButton" type="submit" onclick="continueString('+')" class="operations">+ </button>
-        <br>
+        <br/>
         <button id="subtractButton" type="submit" onclick="continueString('-')" class="operations">- </button>
-        <br>
+        <br/>
         <button id="multiplyButton" type="submit" onclick="continueString('*')" class="operations"> X </button>
-        <br>
+        <br/>
         <button id="divideButton" type="submit" onclick="continueString('/')" class="operations"> / </button>
-        <br>
+        <br/>
         <button id="equalsButton" type="submit" onclick="parseMult(fixString(currentUserString))" class="operations"> = </button>
-        <br></div> <!--end of operations box-->
+        <br/></div> <!--end of operations box-->
 
       <div id="undoAndClearBoxA" class="undoAndClearBox text-center">
         <button id="leftArrowButton" type="submit" onclick="undoPrevious ()"> ⇦ </button>
